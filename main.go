@@ -11,6 +11,7 @@ import (
 	"github.com/indig0fox/advent-of-code-puzzles/y2023d01"
 	"github.com/indig0fox/advent-of-code-puzzles/y2023d02"
 	"github.com/indig0fox/advent-of-code-puzzles/y2023d03"
+	"github.com/indig0fox/advent-of-code-puzzles/y2023d04"
 )
 
 type resultsStruct struct {
@@ -48,9 +49,9 @@ func run2022puzzles(results *resultsStruct) *resultsStruct {
 
 	// Day 1
 	results.Year2022["Day01"] = y2022d01.Run("y2022d01/input.txt", "y2022d01/log.txt")
-	// // Day 2
+	// Day 2
 	results.Year2022["Day02"] = y2022d02.Run("y2022d02/input.txt", "y2022d02/log.txt")
-	// // Day 3
+	// Day 3
 	results.Year2022["Day03"] = y2022d03.Run("y2022d03/input.txt", "y2022d03/log.txt")
 
 	return results
@@ -63,6 +64,8 @@ func run2023puzzles(results *resultsStruct) *resultsStruct {
 	results.Year2023["Day02"] = y2023d02.Run("y2023d02/input.txt", "y2023d02/log.txt")
 	// Day 3
 	results.Year2023["Day03"] = y2023d03.Run("y2023d03/input.txt", "y2023d03/log.txt")
+	// Day 4
+	results.Year2023["Day04"] = y2023d04.Run("y2023d04/input.txt", "y2023d04/log.txt")
 
 	return results
 }

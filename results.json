@@ -25,6 +25,10 @@
     "Day03": {
       "Part1_PartNumbersSum": 536202,
       "Part2_GearRatiosSum": 78272573
+    },
+    "Day04": {
+      "Part1_ScratchcardsPointSum": 24542,
+      "Part2_TotalNumberOfWonCards": 8736438
     }
   }
 }
