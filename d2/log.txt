@@ -1,0 +1,3 @@
+2023/12/03 16:10:49 d2.go:94: --- Day 2: Cube Conundrum ---
+2023/12/03 16:10:49 d2.go:95: Number of possible games: 2449
+2023/12/03 16:10:49 d2.go:96: Cube power sum: 63981

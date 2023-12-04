@@ -1,0 +1,14 @@
+{
+  "Day01": {
+    "Part1_CalibrationValuesSum": 54573,
+    "Part2_CalibrationValuesWithTextSum": 54591
+  },
+  "Day02": {
+    "Part1_NumberOfPossibleGames": 2449,
+    "Part2_CubePowerSum": 63981
+  },
+  "Day03": {
+    "Part1_PartNumbersSum": 536202,
+    "Part2_GearRatiosSum": 78272573
+  }
+}
