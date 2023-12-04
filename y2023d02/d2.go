@@ -1,4 +1,4 @@
-package d2
+package y2023d02
 
 import (
 	"bufio"

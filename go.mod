@@ -1,3 +1,3 @@
-module github.com/indig0fox/advent-of-code-puzzles-2023
+module github.com/indig0fox/advent-of-code-puzzles
 
 go 1.20

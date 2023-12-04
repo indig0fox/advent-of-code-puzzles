@@ -1,14 +1,30 @@
 {
-  "Day01": {
-    "Part1_CalibrationValuesSum": 54573,
-    "Part2_CalibrationValuesWithTextSum": 54591
+  "Year2022": {
+    "Day01": {
+      "Part1_MaxElfCalorieSum": 67658,
+      "Part2_TopThreeElvesCaloriesSum": 200158
+    },
+    "Day02": {
+      "Part1_Score": 12458,
+      "Part2_StrategyGuideScore": 12683
+    },
+    "Day03": {
+      "Part1_SharedItemPrioritySum": 8072,
+      "Part2_BadgePrioritySum": 2567
+    }
   },
-  "Day02": {
-    "Part1_NumberOfPossibleGames": 2449,
-    "Part2_CubePowerSum": 63981
-  },
-  "Day03": {
-    "Part1_PartNumbersSum": 536202,
-    "Part2_GearRatiosSum": 78272573
+  "Year2023": {
+    "Day01": {
+      "Part1_CalibrationValuesSum": 54573,
+      "Part2_CalibrationValuesWithTextSum": 54591
+    },
+    "Day02": {
+      "Part1_NumberOfPossibleGames": 2449,
+      "Part2_CubePowerSum": 63981
+    },
+    "Day03": {
+      "Part1_PartNumbersSum": 536202,
+      "Part2_GearRatiosSum": 78272573
+    }
   }
 }

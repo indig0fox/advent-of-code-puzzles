@@ -5,32 +5,64 @@ import (
 	"log"
 	"os"
 
-	"github.com/indig0fox/advent-of-code-puzzles-2023/d1"
-	"github.com/indig0fox/advent-of-code-puzzles-2023/d2"
-	"github.com/indig0fox/advent-of-code-puzzles-2023/d3"
+	"github.com/indig0fox/advent-of-code-puzzles/y2022d01"
+	"github.com/indig0fox/advent-of-code-puzzles/y2022d02"
+	"github.com/indig0fox/advent-of-code-puzzles/y2022d03"
+	"github.com/indig0fox/advent-of-code-puzzles/y2023d01"
+	"github.com/indig0fox/advent-of-code-puzzles/y2023d02"
+	"github.com/indig0fox/advent-of-code-puzzles/y2023d03"
 )
+
+type resultsStruct struct {
+	Year2022 map[string]interface{}
+	Year2023 map[string]interface{}
+}
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lshortfile)
 
-	results := make(map[string]interface{})
-
-	// Day 1
-	results["Day01"] = d1.Run("d1/input.txt", "d1/log.txt")
-	// Day 2
-	results["Day02"] = d2.Run("d2/input.txt", "d2/log.txt")
-	// Day 3
-	results["Day03"] = d3.Run("d3/input.txt", "d3/log.txt")
-
-	jsonResults, err := json.MarshalIndent(results, "", "  ")
-	if err != nil {
-		panic(err)
+	var results = &resultsStruct{
+		Year2022: make(map[string]interface{}),
+		Year2023: make(map[string]interface{}),
 	}
-	log.Printf("Results: %v\n", string(jsonResults))
 	resultsFile, err := os.Create("results.json")
 	if err != nil {
 		panic(err)
 	}
 	defer resultsFile.Close()
+
+	run2022puzzles(results)
+	run2023puzzles(results)
+
+	jsonResults, err := json.MarshalIndent(results, "", "  ")
+	if err != nil {
+		panic(err)
+	}
+
 	resultsFile.Write(jsonResults)
+	// log.Printf("Results: %v\n", string(jsonResults))
+
+}
+
+func run2022puzzles(results *resultsStruct) *resultsStruct {
+
+	// Day 1
+	results.Year2022["Day01"] = y2022d01.Run("y2022d01/input.txt", "y2022d01/log.txt")
+	// // Day 2
+	results.Year2022["Day02"] = y2022d02.Run("y2022d02/input.txt", "y2022d02/log.txt")
+	// // Day 3
+	results.Year2022["Day03"] = y2022d03.Run("y2022d03/input.txt", "y2022d03/log.txt")
+
+	return results
+}
+
+func run2023puzzles(results *resultsStruct) *resultsStruct {
+	// Day 1
+	results.Year2023["Day01"] = y2023d01.Run("y2023d01/input.txt", "y2023d01/log.txt")
+	// Day 2
+	results.Year2023["Day02"] = y2023d02.Run("y2023d02/input.txt", "y2023d02/log.txt")
+	// Day 3
+	results.Year2023["Day03"] = y2023d03.Run("y2023d03/input.txt", "y2023d03/log.txt")
+
+	return results
 }
