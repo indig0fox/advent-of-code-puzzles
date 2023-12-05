@@ -11,6 +11,14 @@
     "Day03": {
       "Part1_SharedItemPrioritySum": 8072,
       "Part2_BadgePrioritySum": 2567
+    },
+    "Day04": {
+      "Part1_PairsWhereOneRangeFullyContainsTheOther": 530,
+      "Part2_PairsWhereOneRangePartiallyContainsTheOther": 903
+    },
+    "Day05": {
+      "Part1_TopCratesOfEachStack": "QPJPLMNNR",
+      "Part2_TopCratesOfEachStackMultipleAtATime": "BQDNWJPVJ"
     }
   },
   "Year2023": {
