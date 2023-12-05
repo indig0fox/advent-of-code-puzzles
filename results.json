@@ -37,6 +37,10 @@
     "Day04": {
       "Part1_ScratchcardsPointSum": 24542,
       "Part2_TotalNumberOfWonCards": 8736438
+    },
+    "Day05": {
+      "Part1_LowestValueOfIndividualSeeds": 382895070,
+      "Part2_LowestValueOfSeedsInPairs": 17729182
     }
   }
 }

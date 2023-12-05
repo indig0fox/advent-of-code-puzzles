@@ -28,26 +28,26 @@ type shipAssignmentPair struct {
 	PairIndex        int
 }
 
-func (s shipAssignmentPair) showAssignments() string {
-	outString := ""
+// func (s shipAssignmentPair) showAssignments() string {
+// 	outString := ""
 
-	for i := 1; i < 100; i++ {
-		if s.Assignment1[i] {
-			outString += "X"
-		} else {
-			outString += "_"
-		}
-	}
-	outString += "\n"
-	for i := 1; i < 100; i++ {
-		if s.Assignment2[i] {
-			outString += "X"
-		} else {
-			outString += "_"
-		}
-	}
-	return outString
-}
+// 	for i := 1; i < 100; i++ {
+// 		if s.Assignment1[i] {
+// 			outString += "X"
+// 		} else {
+// 			outString += "_"
+// 		}
+// 	}
+// 	outString += "\n"
+// 	for i := 1; i < 100; i++ {
+// 		if s.Assignment2[i] {
+// 			outString += "X"
+// 		} else {
+// 			outString += "_"
+// 		}
+// 	}
+// 	return outString
+// }
 
 func (s shipAssignmentPair) doesOneRangeFullyContainTheOther() bool {
 	// assignment 1 fully contains assignment 2
