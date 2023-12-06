@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"fmt"
 	"log"
 	"os"
 
@@ -15,6 +16,7 @@ import (
 	"github.com/indig0fox/advent-of-code-puzzles/y2023d03"
 	"github.com/indig0fox/advent-of-code-puzzles/y2023d04"
 	"github.com/indig0fox/advent-of-code-puzzles/y2023d05"
+	"github.com/indig0fox/advent-of-code-puzzles/y2023d06"
 )
 
 type resultsStruct struct {
@@ -46,6 +48,9 @@ func main() {
 	resultsFile.Write(jsonResults)
 	// log.Printf("Results: %v\n", string(jsonResults))
 
+	// await user input
+	fmt.Println("Press enter to exit...")
+	fmt.Scanln()
 }
 
 func run2022puzzles(results *resultsStruct) *resultsStruct {
@@ -80,6 +85,7 @@ func run2023puzzles(results *resultsStruct) *resultsStruct {
 		"Day03": y2023d03.Run(getInputFile("03"), getLogFile("03")),
 		"Day04": y2023d04.Run(getInputFile("04"), getLogFile("04")),
 		"Day05": y2023d05.Run(getInputFile("05"), getLogFile("05")),
+		"Day06": y2023d06.Run(getInputFile("06"), getLogFile("06")),
 	}
 
 	return results

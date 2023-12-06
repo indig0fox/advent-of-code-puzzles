@@ -41,6 +41,10 @@
     "Day05": {
       "Part1_LowestValueOfIndividualSeeds": 382895070,
       "Part2_LowestValueOfSeedsInPairs": 17729182
+    },
+    "Day06": {
+      "Part1_ProductOfWaysToWinThreeRaces": 345015,
+      "Part2_NumberOfWaysToWinVeryLongRace": 42588603
     }
   }
 }
