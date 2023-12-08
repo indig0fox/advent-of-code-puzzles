@@ -11,12 +11,7 @@ import (
 	"github.com/indig0fox/advent-of-code-puzzles/y2022d03"
 	"github.com/indig0fox/advent-of-code-puzzles/y2022d04"
 	"github.com/indig0fox/advent-of-code-puzzles/y2022d05"
-	"github.com/indig0fox/advent-of-code-puzzles/y2023d01"
-	"github.com/indig0fox/advent-of-code-puzzles/y2023d02"
-	"github.com/indig0fox/advent-of-code-puzzles/y2023d03"
-	"github.com/indig0fox/advent-of-code-puzzles/y2023d04"
-	"github.com/indig0fox/advent-of-code-puzzles/y2023d05"
-	"github.com/indig0fox/advent-of-code-puzzles/y2023d06"
+	"github.com/indig0fox/advent-of-code-puzzles/y2023d07"
 )
 
 type resultsStruct struct {
@@ -37,7 +32,7 @@ func main() {
 	}
 	defer resultsFile.Close()
 
-	run2022puzzles(results)
+	// run2022puzzles(results)
 	run2023puzzles(results)
 
 	jsonResults, err := json.MarshalIndent(results, "", "  ")
@@ -80,12 +75,13 @@ func run2023puzzles(results *resultsStruct) *resultsStruct {
 		return "y2023d" + day + "/log.txt"
 	}
 	results.Year2023 = map[string]interface{}{
-		"Day01": y2023d01.Run(getInputFile("01"), getLogFile("01")),
-		"Day02": y2023d02.Run(getInputFile("02"), getLogFile("02")),
-		"Day03": y2023d03.Run(getInputFile("03"), getLogFile("03")),
-		"Day04": y2023d04.Run(getInputFile("04"), getLogFile("04")),
-		"Day05": y2023d05.Run(getInputFile("05"), getLogFile("05")),
-		"Day06": y2023d06.Run(getInputFile("06"), getLogFile("06")),
+		// "Day01": y2023d01.Run(getInputFile("01"), getLogFile("01")),
+		// "Day02": y2023d02.Run(getInputFile("02"), getLogFile("02")),
+		// "Day03": y2023d03.Run(getInputFile("03"), getLogFile("03")),
+		// "Day04": y2023d04.Run(getInputFile("04"), getLogFile("04")),
+		// "Day05": y2023d05.Run(getInputFile("05"), getLogFile("05")),
+		// "Day06": y2023d06.Run(getInputFile("06"), getLogFile("06")),
+		"Day07": y2023d07.Run(getInputFile("07"), getLogFile("07")),
 	}
 
 	return results
