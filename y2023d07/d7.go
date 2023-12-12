@@ -37,7 +37,7 @@ func Run(inputPath string, logFilePath string) resultStruct {
 	log.Logger = log.Output(multiWriter)
 	log.Logger = log.With().Timestamp().Str("puzzle", "2023_Day07").Logger()
 	log.Logger = log.Level(zerolog.InfoLevel)
-	log.Logger = log.Level(zerolog.DebugLevel)
+	// log.Logger = log.Level(zerolog.DebugLevel)
 	// log.Logger = log.Level(zerolog.TraceLevel)
 
 	startTime := time.Now()

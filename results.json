@@ -1,9 +1,62 @@
 {
-  "Year2022": {},
+  "Year2022": {
+    "Day01": {
+      "Part1_MaxElfCalorieSum": 67658,
+      "Part2_TopThreeElvesCaloriesSum": 200158
+    },
+    "Day02": {
+      "Part1_Score": 12458,
+      "Part2_StrategyGuideScore": 12683
+    },
+    "Day03": {
+      "Part1_SharedItemPrioritySum": 8072,
+      "Part2_BadgePrioritySum": 2567
+    },
+    "Day04": {
+      "Part1_PairsWhereOneRangeFullyContainsTheOther": 530,
+      "Part2_PairsWhereOneRangePartiallyContainsTheOther": 903
+    },
+    "Day05": {
+      "Part1_TopCratesOfEachStack": "QPJPLMNNR",
+      "Part2_TopCratesOfEachStackMultipleAtATime": "BQDNWJPVJ"
+    }
+  },
   "Year2023": {
+    "Day01": {
+      "Part1_CalibrationValuesSum": 54573,
+      "Part2_CalibrationValuesWithTextSum": 54591
+    },
+    "Day02": {
+      "Part1_NumberOfPossibleGames": 2449,
+      "Part2_CubePowerSum": 63981
+    },
+    "Day03": {
+      "Part1_PartNumbersSum": 536202,
+      "Part2_GearRatiosSum": 78272573
+    },
+    "Day04": {
+      "Part1_ScratchcardsPointSum": 24542,
+      "Part2_TotalNumberOfWonCards": 8736438
+    },
+    "Day05": {
+      "Part1_LowestValueOfIndividualSeeds": 382895070,
+      "Part2_LowestValueOfSeedsInPairs": 17729182
+    },
+    "Day06": {
+      "Part1_ProductOfWaysToWinThreeRaces": 345015,
+      "Part2_NumberOfWaysToWinVeryLongRace": 42588603
+    },
     "Day07": {
       "Part1_SumOfTotalWinnings": 247672737,
       "Part2_SumOfTotalWinningsWithJokers": 0
+    },
+    "Day08": {
+      "Part1_TotalInstructionsFollowed": 21797,
+      "Part2_TotalInstructionsFollowedForAllANodes": 23977527174353
+    },
+    "Day09": {
+      "Part1_HistoryExtrapolatedForwardSum": 1969958987,
+      "Part2_HistoryExtrapolatedBackwardSum": 1068
     }
   }
 }
